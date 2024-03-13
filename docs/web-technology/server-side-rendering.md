@@ -1,0 +1,2 @@
+# Server-side rendering
+One weakness of SPA is not SEO friendly. The browser initially received an empty page with some JS linked from it. The search engines don't like this, because initially empty pages say nothing about your site. This is what server-side rendering is for. The initial HTML and JS loaded on the server, and pre-rendered to HTML, but using frontend technology!
