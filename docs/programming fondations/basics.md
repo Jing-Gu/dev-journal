@@ -19,7 +19,9 @@ typeof "hello"; // returns "string"
 typeof true; // returns "boolean"
 typeof []; // returns "object"
 typeof {}; // returns "object"
+// highlight-start
 typeof null; // returns "object" (this is a known quirk in JavaScript)
+// highlight-end
 typeof undefined; // returns "undefined"
 typeof function(){}; // returns "function"
 ```
