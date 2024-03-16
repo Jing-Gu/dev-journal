@@ -10,7 +10,7 @@ Use cases are info-based sites such as: personal blogs, company websites, and la
 :::
 
 ## Dynamic website
-A dynamic website generates content **on-the-fly** in response to user requests or inputs. Content can be customized based on various factors such as user preferences, session data, or database content. It is often powered by **server-side programming languages** like PHP, Python, Ruby, or Node.js.
+A dynamic website generates content **on-the-fly** in response to user requests or inputs. Content can be customized based on various factors such as user preferences, session data, or database content. It is often powered by **server-side programming languages** like Java, PHP, Python, Ruby, or Node.js. These languages handle HTTP requests from clients, interact with databases, and perform other server-side tasks.
 
 One disadvantage is that every page that a user visits needs to be generated on the server. That means, the user always has to wait for a new page to be sent even there is only a tiny change and the main frame stays the same.
 
