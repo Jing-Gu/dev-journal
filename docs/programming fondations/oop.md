@@ -247,3 +247,27 @@ Polymorphism is the ability for an object or function to take many forms. It hel
 Java supports two types of polymorphism, runtime polymorphism and compile-time polymorphism.
 
 oddListy and Listy are both ArrayLists. They both have all the functionality of an ArrayList, including that add functionality. However, the implementations of each add algorithm are different and are determined at runtime based on the instances original type, hence why it's called runtime polymorphism.
+
+
+## OOP anti-patterns and code smells
+Code smells are indicators or warning signs in our code that suggest potential problems. They do not necessarily indicate a bug, but rather areas where our code could be improved.
+
+### Class bloat
+- Problem: A large class that handles many responsibilities
+- Impact: Challenging to maintain and understand because we might not understand the side effects it has or what could break by changing it
+- Fix: Refactor into smaller classes
+
+### Long methods
+- Problem: Long method with many responsibilities
+- Impact: Hard to read or understand
+- Fix: Refactor into smaller components
+
+### God object
+- Problem: A single object that knows and does too much
+- Impact: It often has many attributes and methods, making it a single point of failure for the application, usually seen as an extreme class bloat
+- Fix: Refactor into smaller components
+
+### Feature envy
+- Problem: One class has a strong interest in the internal details or attributes of another class, more so than in its own class
+- Impact: Create excessive coupling, making the two classes less independent
+- Fix: Move the method over to the class it envies, or define an interface between the two classes

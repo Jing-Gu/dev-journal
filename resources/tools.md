@@ -1,9 +1,10 @@
 ---
-slug: /
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Icons
+# Tools
+
+## Icons
 | Link | About |
 | ---- | ----- |
 |[SVG Repo](https://www.svgrepo.com/) | 500.000+ Open-licensed SVG Vector and Icons |
@@ -12,14 +13,10 @@ sidebar_position: 1
 
 
 
-# Readme, Markdown
+## Readme, Markdown
 | Link | About |
 | ---- | ----- |
 | [README online editor](https://readme.so/editor) | Readme template with all customizable sections |
 | [Dillinger markdown editor](https://dillinger.io/) | WYSIWYG markdown editor |
 
 [Markdown help](https://commonmark.org/help/)
-
-
-# Tutorials
-[full stack open](https://fullstackopen.com/en/)
