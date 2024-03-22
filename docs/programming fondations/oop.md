@@ -133,10 +133,12 @@ public class Tree {
 }
 ```
 
-You may also want some attributes to be read-only from the outside, which means you only define a getter but not a setter. The variable can be only referenced but not changed.
+We may also want some attributes to be read-only from the outside, which means we only define a getter but not a setter. The variable can be only referenced but not changed.
 
 ### Inheritance
 Inheritance allows us to create class hierarchies where classes inherit properties and behaviors from other classes. The class that inherits the properties is called the **subclass** or child class. The class that's being inherited from is called the **superclass** or the parent class. That's to say, the subclass inherits from the superclass.
+
+Typically we think of one class inheriting from another if they share an IS-A relationship. For example, if a cat is an animal, then a cat should inherit from the animal class. We can extend this further with other types of animals. In each case, we're reusing the implementation of the classes we inherit from.
 
 Benefits of inheritance
 - Promote code reusibility, avoid duplicating code in two different places

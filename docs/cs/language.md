@@ -11,6 +11,23 @@ sidebar_position: 1
 
 The computer responds only to a predetermined set of known commands, known as **instruction list**, aka IL. The IL is, in fact, the alphabet of a machine language. This is the simplest and most primary set of symbols we can use to give commands to a computer. It's the computer's mother tongue.
 
+Computers use 0 and 1, which is so called **bits** or **binary digits**. That's to say, computers speak binary using bits.
+
+## ASCII ("ass key")
+Abbreviated from American Standard Code for Information Interchange. ASCII codes represent **text** in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII.
+
+ASCII is an **8-bit** code. That is, it uses eight bits to represent a letter or a punctuation mark. Eight bits are called a **byte**. A binary code with eight digits, such as 1101 10112, can be stored in one byte of computer memory.
+
+For example letter A
+
+→ ASCII code: 065
+
+→ Binary: 01000001 (a byte)
+
+ASCII has max possibility 256 (2 power in 8), but not enough to express everything such as Asian languages, or emoji. That's why **unicode** was invented.
+
+e.g. The decimal number representing emoji "face with tears of joy" is 128514.
+
 ## Source code and source file
 To bridge between humain and computer, we need a language which humain can write and computers can execute, one that is far more complex than machine language and yet far simpler than natural language. Such languages are called **high-level programming languages**.
 
@@ -32,3 +49,5 @@ A program written in a high-level programming language is called a **source cod
 Python is an **interpreted language**. If you want to program in Python, you'll need the **Python interpreter**. You won't be able to run your code without it.
 
 Due to historical reasons, languages designed to be utilized in the interpretation manner are often called **scripting languages**, while the source programs encoded using them are called **scripts**.
+
+
