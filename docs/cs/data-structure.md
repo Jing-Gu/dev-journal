@@ -43,7 +43,7 @@ There are many difference between Array adn Collections.
 - Collections can not hold primitive types, `List<int>` is wrong, `List<Integer>` is correct.
 
 ### LinkedList
-Each element in the list has a reference to the next element and the previous elements. LinkedList keeps items in the same order when adding them. An item can be added between the existed items by passing the index to add().
+Each element in the list has a reference to the next element and the previous elements. **LinkedList keeps items in the same order when adding them**. An item can be added between the existed items by passing the index to `add()`.
 
 ```java
 import java.util.LinkedList;

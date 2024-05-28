@@ -11,6 +11,35 @@ if (foo) {}
 ```
 `if(foo)` will evaluate to true if foo is NOT: `null`, `undefined`, `NaN`, empty string, `0` or `false`. Be careful with `0` as 0 is considered false.
 
+## Differences between `undeclared`, `undefined`, `null` variables
+**Undeclared variables** are created when you assign a value to an identifier that is NOT previously created using `var`,` let` `or const`. They are defined globally and will throw `ReferenceError` when trying to assign to an undeclared variable in strict mode.
+```js
+function foo() {
+  x = 1; // Throws a ReferenceError in strict mode
+}
+
+foo();
+console.log(x); // 1
+```
+
+**Undefined variable** is a variable that has been declared, but not assigned a value. It is of type `undefined`. If assigning a function to a variable and this function doesn’t return any value, the variable also has value undefined.
+```js
+var foo;
+console.log(foo); // undefined
+```
+
+**Null** represents no value and is different from undefined, because a variable that is null will have been explicitly assigned to the null value.
+```js
+var foo = null;
+console.log(foo === null); // true
+```
+
+:::warning
+Never leave variables undeclared or unassigned.
+Just explicitly assign null to them after declaring if you don't intend to use it yet.
+:::
+
+
 ## `typeof` vs `isNaN`
 The `typeof` *operator* is used to determine the type of a variable or expression. It returns a string indicating the data type of the operand.
 ```js

@@ -94,3 +94,29 @@ sudo apt autoremove
 # it's recommended to reboot your system to apply the changes effectively
 sudo reboot
 ```
+### Headless servers
+A headless server refers to a server or computer system that operates without a graphical user interface (GUI). In other words, it runs without a monitor, keyboard, or mouse, and there is no traditional desktop environment.
+
+Headless servers typically operate entirely via command-line interfaces (CLIs) or through remote administration tools such as SSH. Rnning a server in headless mode can save system resources because it doesn't need to allocate resources to graphical processes and interface components.
+
+Headless servers are commonly used for a variety of purposes, including web hosting, file storage, application servers, database servers, IoT devices, and more. They are especially prevalent in data centers and cloud computing environments.
+
+## Service management
+On a Linux system, and especially on a server, we rely on services to provide functionality for us, and our users. Services are programs that run all the time, and wait to respond to particular conditions or input.
+
+Servers exist mostly to run services from common activities like sharing files or serving web pages, to network features like providing IP addresses through DHCP or resolving name requests with DNS, to hosting code repositories, running and managing containers or virtual machines, hosting applications, running databases, and more.
+
+On Ubuntu, services are managed by `systemctl`, and we can control them with the systemctl command.
+```bash
+# show all the individual items that systemctl tracks: devices, mounts, and so on
+systemctl
+
+# find more details about a particular service e.g. System Logging Service
+systemctl status rsyslog.service
+
+# start or stop a service
+systemctl start service_name
+systemctl stop service_name
+systemctl restart service_name
+
+```
